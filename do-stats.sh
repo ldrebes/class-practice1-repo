@@ -2,5 +2,5 @@
 for datafile in "$@"
 do 
     echo $datafile
-    bash goostats $datafile stat-$datafile
+    bash goostats -J 100 -r $datafile stat-$datafile
 done
